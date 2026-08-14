@@ -56,8 +56,40 @@ plt.xlabel("Department")
 plt.ylabel("Avg-Salary")
 ```
 
-- `groupby()` → groups employees by department
-- `mean()` → calculates average salary
+- `groupby()` = groups employees by department
+- `mean()` = calculates average salary
 
 ## OUTPUT
 <img src="images/avg-sal-department.png" alt="Average Salary by Department">
+
+## Department Distribution
+
+```python
+dc=df["Department"].value_counts()
+plt.figure(figsize=(6,6))
+plt.pie(dc.values,labels=dc.index,autopct="%1.1f%%",shadow=True)
+plt.legend()
+```
+- `pie()` = creates the pie chart
+- `legend()`= automatically adds a visual guide to the plot
+- `figure()`= creates the main top-level container that holds all plot elements like axes, titles, lines, and legends
+- `figsize=(6, 6)`= parameter that accepts a tuple mapping
+
+## OUTPUT
+<img src="images/pie.png" alt="Department percentage">
+
+
+## Experience vs Salary
+```python
+plt.scatter(df["Experience"],df["Salary"])
+plt.xlabel("Experience (Years)")
+plt.ylabel("Salary")
+plt.title("Experience vs Salary", fontsize=16, fontweight="bold",color="blue")
+plt.tick_params(axis="both",colors="blue")
+plt.grid()
+```
+- `tick_params()` = changes the style of both the tick marks and their text labels
+- `grid()`= turns on the background grid line
+
+## OUTPUT
+<img src="images/exp-sal.png" alt="Experience vs Salary">
