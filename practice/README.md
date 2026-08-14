@@ -23,7 +23,7 @@ plt.ylabel("Age", fontsize=10)
 plt.title("Age of employees", fontweight="bold", color="green", fontsize=20)
 ```
 ## OUTPUT
-<img src="images/employee-age.png" alt="Employee Age Graph">
+<img src="../images/employee-age.png" alt="Employee Age Graph">
 
 ## 🔷 Employees by Department
 
@@ -43,7 +43,7 @@ plt.title("Employees by department", fontweight="bold", color="green", fontsize=
 - `bar()` = creates the bar chart
 
 ## OUTPUT
-<img src="images/no.of-employee-by-department.png" alt="Employees by Department">
+<img src="../images/no.of-employee-by-department.png" alt="Employees by Department">
 
 ## 🔷 Average Salary by Department
 
@@ -60,7 +60,7 @@ plt.ylabel("Avg-Salary")
 - `mean()` = calculates average salary
 
 ## OUTPUT
-<img src="images/avg-sal-department.png" alt="Average Salary by Department">
+<img src="../images/avg-sal-department.png" alt="Average Salary by Department">
 
 ## Department Distribution
 
@@ -76,7 +76,7 @@ plt.legend()
 - `figsize=(6, 6)`= parameter that accepts a tuple mapping
 
 ## OUTPUT
-<img src="images/pie.png" alt="Department percentage">
+<img src="../images/pie.png" alt="Department percentage">
 
 
 ## Experience vs Salary
@@ -92,4 +92,4 @@ plt.grid()
 - `grid()`= turns on the background grid line
 
 ## OUTPUT
-<img src="images/exp-sal.png" alt="Experience vs Salary">
+<img src="../images/exp-sal.png" alt="Experience vs Salary">
